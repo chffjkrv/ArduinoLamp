@@ -1,0 +1,13 @@
+Ardulamp:
+
+-Sensor de movimiento
+-Luz regulable bluetooth via app.
+-Luces sincronizadas con la música
+-Luces controladas por la temperatura del ambiente
+-Pantalla LCD
+-Mando a distancia
+-Activación táctil
+-Rotación de base
+-https://www.thingiverse.com/make:710389
+https://www.thingiverse.com/thing:524925
+https://www.thingiverse.com/thing:2039147
