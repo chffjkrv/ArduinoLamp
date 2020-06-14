@@ -1,8 +1,10 @@
-Proyecto de Lampara Minecraft
+Proyecto de Lampara retroconsola
 
 Carcasa impresa en Anycubic
 
 Software y Hardware con Arduino
 
-Funcionalidad RGB acompasada con la música, control a traves de app en Android.
+Funcionalidad RGB acompasada con la temepratura, control a traves de app en Android.
+
+
 
