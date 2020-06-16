@@ -1,0 +1,12 @@
+DISIPADOR: https://www.tiendatec.es/raspberry-pi/accesorios/1101-disipador-de-calor-xl-para-raspberry-pi-4-8472496015899.html?kk=a4c62e8-172bcb00775-41b&gclid=EAIaIQobChMInuWE8JCG6gIVxe5RCh2euAl9EAkYECABEgIPEvD_BwE&utm_source=kelkooes&utm_medium=cpc&utm_campaign=kelkooclick&utm_term=tiendatec+DISIPADOR+DE+CALOR+XL+PARA+RAS&from=kelkooes
+
+VENTILADOR:
+https://www.pccomponentes.com/noctua-nf-a4x20-pwm-ventilador-caja-40x20mm
+
+SSD:
+https://www.pccomponentes.com/kingston-a400-ssd-120-gb
+https://www.amazon.es/dp/B07G3L3DRK/ref=as_li_ss_tl?slotNum=5&s=gateway&keywords=Crucial+BX500&language=en_US&sr=8-2&linkCode=gs2&linkId=06c6a446cdf12c25b9c1376f67339a81&imprToken=yjxtXcxSl-3DvMi3SWK0mA&creativeASIN=B07G3L3DRK&tag=codemallet04-21
+
+CABLE SATA-USB3.0 SSD:
+https://www.amazon.es/dp/B00HJZJI84/ref=as_li_ss_tl?slotNum=2&keywords=startech+sata+to+usb&language=en_US&sr=8-3&linkCode=g12&linkId=9ebea49734c46346cc24a3fc6830a47d&imprToken=9ivqA.bPICtYGO6QGwGGKw&creativeASIN=B00HJZJI84&tag=codemallet04-21
+
