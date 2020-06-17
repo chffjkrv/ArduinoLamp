@@ -9,6 +9,7 @@ import time
 from rpi_ws281x import PixelStrip, Color
 import argparse
 import subprocess
+import numpy as np
 
 # LED strip configuration:
 LED_COUNT = 117        # Number of LED pixels.
@@ -22,12 +23,12 @@ LED_CHANNEL = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 
 
 # Define functions which animate LEDs in various ways.
-def colorWipe(strip, color, wait_ms=50):
+def colorWipe(strip, color, wait_ms=1):
     """Wipe color across display a pixel at a time."""
     for i in range(strip.numPixels()):
         strip.setPixelColor(i, color)
         strip.show()
-        time.sleep(wait_ms / 1000.0)
+#        time.sleep(wait_ms / 1000.0)
 
 
 def theaterChase(strip, color, wait_ms=50, iterations=10):
@@ -87,9 +88,27 @@ def theaterChaseRainbow(strip, wait_ms=50):
 def dameTemp():
 	temp = subprocess.check_output(['vcgencmd', 'measure_temp'])
 	temp = temp.decode("utf-8").lstrip("temp=").replace('\'','').replace('C','').replace('.0','')
-	temp = int(temp)
-	print (temp)
+	temperatura = int(temp)
+	return temperatura
 
+def creaArrColors():
+	r=0
+	g=50
+	b=255
+	arrColor=np.full((90,3),0)
+	for i in range(26,90):
+		arrColor[i]=(r,g,b)
+		b=b-4
+		r=r+4
+	return arrColor
+
+def colorTemp():
+	arrColor = creaArrColors()
+	temp=dameTemp()
+	col = arrColor[temp]
+	time.sleep(2)
+	#colorWipe(strip,Color(col))
+	return col
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
@@ -104,11 +123,16 @@ if __name__ == '__main__':
 		print('Use "-c" para limpiar los LED al salir')
 
 	try:
+
 		while True:
-			dameTemp()
-			colorWipe(strip, Color(245,35,255))
-			dameTemp()
-			colorWipe(strip, Color(63,181,197))
+			col=colorTemp()
+			r,g,b =np.split(col,3)
+
+			#dameTemp()
+			colorWipe(strip, Color(r[0],g[0],b[0]))
+			print(dameTemp())
+			#dameTemp()
+			#colorWipe(strip, Color(63,181,197))
 
 	except KeyboardInterrupt:
 		if args.clear:
