@@ -1,0 +1,21 @@
+- Actualizar frimware de usb 3.0 para bajar el consumo y la temp:
+
+	https://raspberryparatorpes.net/raspbian-2/nuevo-firmware-para-raspberry-pi-4/
+	
+
+- Instalar sbc-benchmar para bench:
+
+	https://github.com/ThomasKaiser/sbc-bench
+	sudo /bin/bash ./sbc-bench -c
+
+
+- Hacer Overclock:
+	
+	https://hardzone.es/tutoriales/overclocking/overclock-raspberry-pi-4/
+	
+- Arreglar bluetooth para que reconozca altavoces:
+	
+	sudo apt install pulseaudio-module-bluetooth 
+	pulseaudio -k
+	pulseaudio --start
+	sudo bluetoothctl
