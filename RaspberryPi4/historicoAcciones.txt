@@ -19,3 +19,8 @@
 	pulseaudio -k
 	pulseaudio --start
 	sudo bluetoothctl
+
+-Configuración para USB_BOOT:
+	https://hardzone.es/tutoriales/montaje/raspberry-pi-4-ssd-pendrive-usb/
+	(Ya está cambiado el firmware y sustituidos los archivos del boot)
+	
