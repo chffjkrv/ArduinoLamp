@@ -1,0 +1,25 @@
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 10000
+
+
+Test execution summary:
+    total time:                          92.7289s
+    total number of events:              10000
+    total time taken by event execution: 92.7218
+    per-request statistics:
+         min:                                  9.23ms
+         avg:                                  9.27ms
+         max:                                 27.85ms
+         approx.  95 percentile:               9.28ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   92.7218/0.00
+
